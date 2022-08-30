@@ -1,0 +1,503 @@
+{
+  "contractName": "WithdrawalInterface",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "withdrawable",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.6+commit.6c089d02\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"withdrawable\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"withdraw(address,uint256)\":{\"params\":{\"amount\":\"is the amount of PLI to send\",\"recipient\":\"is the address to send the PLI to\"}}}},\"userdoc\":{\"methods\":{\"withdraw(address,uint256)\":{\"notice\":\"transfer PLI held by the contract belonging to msg.sender to another address\"},\"withdrawable()\":{\"notice\":\"query the available amount of PLI to withdraw by msg.sender\"}}}},\"settings\":{\"compilationTarget\":{\"@goplugin/contracts/src/v0.6/interfaces/WithdrawalInterface.sol\":\"WithdrawalInterface\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@goplugin/contracts/src/v0.6/interfaces/WithdrawalInterface.sol\":{\"keccak256\":\"0x0a4b4d2822d286bd79eb424ef494991356cdadf71db8497204109e6b3b5b82b8\",\"urls\":[\"bzz-raw://e298fa4eb7034903feb699a16e9fda722ef2edfc7dd669edd991c5d12c49680b\",\"dweb:/ipfs/QmTtCt2jajTQBkgXU1BFbC9w3Vrmsnj3uoW7nbJUcGeuqs\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.6.0;\n\ninterface WithdrawalInterface {\n  /**\n   * @notice transfer PLI held by the contract belonging to msg.sender to\n   * another address\n   * @param recipient is the address to send the PLI to\n   * @param amount is the amount of PLI to send\n   */\n  function withdraw(address recipient, uint256 amount) external;\n\n  /**\n   * @notice query the available amount of PLI to withdraw by msg.sender\n   */\n  function withdrawable() external view returns (uint256);\n}\n",
+  "sourcePath": "@goplugin/contracts/src/v0.6/interfaces/WithdrawalInterface.sol",
+  "ast": {
+    "absolutePath": "@goplugin/contracts/src/v0.6/interfaces/WithdrawalInterface.sol",
+    "exportedSymbols": {
+      "WithdrawalInterface": [
+        1569
+      ]
+    },
+    "id": 1570,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1554,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:9"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 1569,
+        "linearizedBaseContracts": [
+          1569
+        ],
+        "name": "WithdrawalInterface",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": {
+              "id": 1555,
+              "nodeType": "StructuredDocumentation",
+              "src": "91:208:9",
+              "text": "@notice transfer PLI held by the contract belonging to msg.sender to\nanother address\n@param recipient is the address to send the PLI to\n@param amount is the amount of PLI to send"
+            },
+            "functionSelector": "f3fef3a3",
+            "id": 1562,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdraw",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1560,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1557,
+                  "mutability": "mutable",
+                  "name": "recipient",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1562,
+                  "src": "320:17:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1556,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "320:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1559,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1562,
+                  "src": "339:14:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1558,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "339:7:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "319:35:9"
+            },
+            "returnParameters": {
+              "id": 1561,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "363:0:9"
+            },
+            "scope": 1569,
+            "src": "302:62:9",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 1563,
+              "nodeType": "StructuredDocumentation",
+              "src": "368:82:9",
+              "text": "@notice query the available amount of PLI to withdraw by msg.sender"
+            },
+            "functionSelector": "50188301",
+            "id": 1568,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdrawable",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1564,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "474:2:9"
+            },
+            "returnParameters": {
+              "id": 1567,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1566,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1568,
+                  "src": "500:7:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1565,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "500:7:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "499:9:9"
+            },
+            "scope": 1569,
+            "src": "453:56:9",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1570,
+        "src": "57:454:9"
+      }
+    ],
+    "src": "32:480:9"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "@goplugin/contracts/src/v0.6/interfaces/WithdrawalInterface.sol",
+      "exportedSymbols": {
+        "WithdrawalInterface": [
+          1569
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.6",
+            ".0"
+          ]
+        },
+        "id": 1554,
+        "name": "PragmaDirective",
+        "src": "32:23:9"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            1569
+          ],
+          "name": "WithdrawalInterface",
+          "scope": 1570
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "f3fef3a3",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "withdraw",
+              "overrides": null,
+              "scope": 1569,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice transfer PLI held by the contract belonging to msg.sender to\nanother address\n@param recipient is the address to send the PLI to\n@param amount is the amount of PLI to send"
+                },
+                "id": 1555,
+                "name": "StructuredDocumentation",
+                "src": "91:208:9"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "recipient",
+                      "overrides": null,
+                      "scope": 1562,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 1556,
+                        "name": "ElementaryTypeName",
+                        "src": "320:7:9"
+                      }
+                    ],
+                    "id": 1557,
+                    "name": "VariableDeclaration",
+                    "src": "320:17:9"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "amount",
+                      "overrides": null,
+                      "scope": 1562,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1558,
+                        "name": "ElementaryTypeName",
+                        "src": "339:7:9"
+                      }
+                    ],
+                    "id": 1559,
+                    "name": "VariableDeclaration",
+                    "src": "339:14:9"
+                  }
+                ],
+                "id": 1560,
+                "name": "ParameterList",
+                "src": "319:35:9"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1561,
+                "name": "ParameterList",
+                "src": "363:0:9"
+              }
+            ],
+            "id": 1562,
+            "name": "FunctionDefinition",
+            "src": "302:62:9"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "50188301",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "withdrawable",
+              "overrides": null,
+              "scope": 1569,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice query the available amount of PLI to withdraw by msg.sender"
+                },
+                "id": 1563,
+                "name": "StructuredDocumentation",
+                "src": "368:82:9"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1564,
+                "name": "ParameterList",
+                "src": "474:2:9"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 1568,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1565,
+                        "name": "ElementaryTypeName",
+                        "src": "500:7:9"
+                      }
+                    ],
+                    "id": 1566,
+                    "name": "VariableDeclaration",
+                    "src": "500:7:9"
+                  }
+                ],
+                "id": 1567,
+                "name": "ParameterList",
+                "src": "499:9:9"
+              }
+            ],
+            "id": 1568,
+            "name": "FunctionDefinition",
+            "src": "453:56:9"
+          }
+        ],
+        "id": 1569,
+        "name": "ContractDefinition",
+        "src": "57:454:9"
+      }
+    ],
+    "id": 1570,
+    "name": "SourceUnit",
+    "src": "32:480:9"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.6+commit.6c089d02.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-08-30T11:21:56.446Z",
+  "devdoc": {
+    "methods": {
+      "withdraw(address,uint256)": {
+        "params": {
+          "amount": "is the amount of PLI to send",
+          "recipient": "is the address to send the PLI to"
+        }
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {
+      "withdraw(address,uint256)": {
+        "notice": "transfer PLI held by the contract belonging to msg.sender to another address"
+      },
+      "withdrawable()": {
+        "notice": "query the available amount of PLI to withdraw by msg.sender"
+      }
+    }
+  }
+}
