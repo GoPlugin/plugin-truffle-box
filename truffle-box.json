@@ -6,7 +6,12 @@
     "commands": {
       "Compile contracts": "truffle compile",
       "Migrate contracts": "truffle migrate",
-      "Test contracts": "truffle test"
+      "Test contracts": "truffle test",
+      "Run FulFillment":"yarn fulfillment",
+      "Run Adapter":"yarn adapter",
+      "Approve PLI":"yarn approve",
+      "Transfer PLI":"yarn transfer",
+      "Request Price":"yarn request"
     },
     "hooks": {
       "post-unpack": ""
